@@ -4,6 +4,7 @@
   background-clip: content-box;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 
   .body-img{
     min-height: 600px;
@@ -50,10 +51,10 @@
 
 .logoBody-img{
   position: absolute;
+  width: 300px;
   bottom: 15px;
   transform: translateX(-10%);
   left: 50%;
-  aspect-ratio: 162/35;
 
   animation: showLogo 1s ease;
 }
@@ -79,6 +80,16 @@
 
   .description{
     padding-top: 30px !important;
+  }
+
+  .logoBody-img{
+    margin-top: 45px;
+    width: 100% !important;
+    position: relative;
+  }
+
+  .cuerpo-body-section{
+    height: max-content !important;
   }
 }
 
