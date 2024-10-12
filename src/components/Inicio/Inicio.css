@@ -83,9 +83,8 @@
   }
 
   .logoBody-img{
-    /*margin-top: 45px;*/
-    width: 100% !important;
-    /*position: relative;*/
+    width: 70% !important;
+    margin-bottom: 20px !important;
   }
 
 }
