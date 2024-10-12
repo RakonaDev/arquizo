@@ -6,9 +6,18 @@ import { useEffect } from "react";
 export function Inicio() {
 
   useEffect(() => {
+    const $tituloBody = document.getElementById("titulo-body");
+
+    if(window.innerWidth < 768){
+      $tituloBody.classList.add("fs-1");
+    }
+
+    if (window.innerWidth < 1170) {
+      document.getElementById("ingenieros").style.display = "none";
+    }
 
     window.addEventListener("resize", function () {
-      const $tituloBody = document.getElementById("titulo-body");
+      
       if (window.innerWidth < 1170) {
         document.getElementById("ingenieros").style.display = "none";
       } else {

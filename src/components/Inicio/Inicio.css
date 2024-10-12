@@ -53,6 +53,7 @@
   bottom: 15px;
   transform: translateX(-10%);
   left: 50%;
+  aspect-ratio: 162/35;
 
   animation: showLogo 1s ease;
 }
@@ -61,6 +62,9 @@
   .description{
     width: 100% !important;
     word-break: break-all !important;
+  }
+  .logoBody-img{
+    transform: translateX(-50%);
   }
 }
 
