@@ -14,7 +14,7 @@
 .titulo-body-section{
   position: relative;
   width: 100%;
-  height: 65%;
+  height: 460px;
 }
 
 .titulo-body{
@@ -30,7 +30,7 @@
 .cuerpo-body-section{
   position: relative;
   width: 100%;
-  height: 35%;
+  height: 410px;
   background-color: rgba(9, 42, 77, 0.94);
 
   .ingenieros-img{
@@ -83,14 +83,11 @@
   }
 
   .logoBody-img{
-    margin-top: 45px;
+    /*margin-top: 45px;*/
     width: 100% !important;
-    position: relative;
+    /*position: relative;*/
   }
 
-  .cuerpo-body-section{
-    height: max-content !important;
-  }
 }
 
 @keyframes showScale {
