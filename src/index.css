@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+  font-family: 'ibrand';
+  src: url('../public/ibrand.otf') format('truetype');
+}
+
+.ibrand {
+  font-family: 'ibrand' !important;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.sombraHeader{
+  width: 95px;
+  height: 100vh;
+  background-color: rgba(9, 42, 77, 0.94);
+}
+
+.inter{
+  font-family: 'Inter', sans-serif;
+}
+
+.text-rojo{
+  color: #F9202E;
+}
+
+p{
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .container{
+    padding-left: 40px !important;
+  }
+}
