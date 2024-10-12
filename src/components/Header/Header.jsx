@@ -21,6 +21,20 @@ export function Header() {
           </ul>
         </div>
       </header>
+      <nav className='fixed-bottom redes-container'>
+        <a href="#" className='redes-item'>
+          <i className="fab fa-facebook-f fs-4"></i>
+        </a>
+        <a href="#" className='redes-item'>
+          <i className="fab fa-instagram fs-4"></i>
+        </a>
+        <a href="#" className='redes-item'>
+          <i className='fa-brands fa-tiktok fs-4'></i>
+        </a>
+        <a href="#" className='redes-item'>
+          <i className=' fa-brands fa-youtube fs-4'></i>
+        </a>
+      </nav>
     </>
   )
 }

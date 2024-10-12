@@ -68,6 +68,43 @@
   }
 }
 
+.redes-container{
+  width: 260px;
+  border-radius: 31px;
+  height: 60px;
+  left: 120px;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(255, 33, 46, 0.58);
+
+  .redes-item{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #092A4D;
+    color: white;
+    transition: all 0.5s;
+
+    &:hover{
+      color: #FF212E;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .redes-container{
+    transform: translateX(-50%);
+    left: 60%;
+  }
+}
+
 @keyframes showHeader {
   from{
     opacity: 0;
