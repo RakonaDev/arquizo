@@ -1,5 +1,5 @@
 import "./Nosotros.css";
-import Helmet from "../../img/Nosotros/Helmet.png";
+import Helmet from "../../img/Nosotros/helmet.png";
 
 import Arquitecto1 from "../../img/Nosotros/arquitecto1.jpg";
 import Arquitecto2 from "../../img/Nosotros/arquitecto2.png";
