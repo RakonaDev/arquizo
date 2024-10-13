@@ -12,7 +12,7 @@ export function Inicio() {
       $tituloBody.classList.add("fs-1");
     }
 
-    if (window.innerWidth < 1170) {
+    if (window.innerWidth < 1670) {
       document.getElementById("ingenieros").style.display = "none";
     }
 
@@ -35,7 +35,8 @@ export function Inicio() {
 
   return (
     <div className="d-flex" id="inicio">
-      <div className="sombraHeader"></div>
+      <div className="sombraHeader" id="sombraInicio"></div>
+      <div className="build-fixed fixed-top"></div>
       <div className="body-container">
         <section className="titulo-body-section">
           <section className="container">

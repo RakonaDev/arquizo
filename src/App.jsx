@@ -1,6 +1,8 @@
 import './App.css'
 import { Header } from './components/Header/Header'
 import { Inicio } from './components/Inicio/Inicio'
+import { Nosotros } from './components/Nosotros/Nosotros'
+import { NosotrosSec } from './components/NosotrosSec/NosotrosSec'
 
 function App() {
 
@@ -8,6 +10,8 @@ function App() {
     <>
       <Header></Header>
       <Inicio></Inicio>
+      <Nosotros></Nosotros>
+      <NosotrosSec></NosotrosSec>
     </>
   )
 }

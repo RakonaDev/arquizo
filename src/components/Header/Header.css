@@ -1,7 +1,7 @@
 
 .header-container{
   width: 95px;
-  height: 100vh;
+  height: 100dvh;
   background-color: #092A4D;
   overflow-y: auto;
   overflow-x: hidden;
@@ -73,7 +73,7 @@
   border-radius: 31px;
   height: 60px;
   left: 120px;
-  bottom: 20px;
+  bottom: 30px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

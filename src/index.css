@@ -14,8 +14,7 @@
 }
 
 .sombraHeader{
-  width: 95px;
-  height: 100vh;
+  width: 95px !important;
   background-color: rgba(9, 42, 77, 0.94);
 }
 
@@ -27,12 +26,29 @@
   color: #F9202E;
 }
 
+.texto-azul{
+  color: #092A4D;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
 p{
   margin-bottom: 0;
+}
+
+h1{
+  letter-spacing: 9px;
 }
 
 @media (max-width: 768px) {
   .container{
     padding-left: 40px !important;
+  }
+
+  h1{
+    text-align: center;
+    width: 95% !important;
   }
 }
