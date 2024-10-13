@@ -6,7 +6,7 @@
   background-clip: content-box;
   background-size: cover;
   background-repeat: no-repeat;*/
-  overflow-x: hidden;
+  overflow: hidden;
 
   .body-img{
     min-height: 600px;
@@ -22,6 +22,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
+}
+
+#inicio{
+  height: 100dvh;
 }
 
 .titulo-body-section{
@@ -99,6 +103,10 @@
   .logoBody-img{
     width: 70% !important;
     top: 40px !important;
+  }
+
+  #inicio{
+    height: auto !important;
   }
 
 

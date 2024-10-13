@@ -2,7 +2,8 @@
   position: relative;
   flex-grow: 1;
   height: auto;
-  padding-bottom: 175px;
+  /*padding-bottom: 175px;*/
+  padding-bottom: 6.5rem;
 }
 
 .nosotros-container .helmet-img-container{
