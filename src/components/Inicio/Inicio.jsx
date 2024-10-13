@@ -39,8 +39,8 @@ export function Inicio() {
       <div className="build-fixed fixed-top"></div>
       <div className="body-container">
         <section className="titulo-body-section">
-          <section className="container">
-            <h1 className="text-rojo titulo-body" id="titulo-body">DISEÑO VISIÓN FUTURO</h1>
+          <section className="">
+            <h1 className="text-rojo titulo-body pe-1" id="titulo-body">DISEÑO VISIÓN FUTURO</h1>
           </section>
         </section>
         <section className="cuerpo-body-section">

@@ -1,6 +1,7 @@
 .nosotros-container{
   position: relative;
   flex-grow: 1;
+overflow: hidden;  width: 100%;
   height: auto;
   /*padding-bottom: 175px;*/
   padding-bottom: 6.5rem;
@@ -59,7 +60,7 @@
 
   >p{
     position: absolute;
-    right: -170px;
+    right: -190px;
     top: 40%;
     transform: rotate(270deg);
     color: white;
@@ -79,6 +80,10 @@
 }
 
 @media (max-width: 1500px) {
+
+.nosotros-container{
+  width: 100% !important;
+}
 
   .helmet-img-container{
     display: none !important;
@@ -100,5 +105,23 @@
 
   .nosotros-container{
     height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .nosotros-container{
+    flex-grow: 0;
+    width: 100% !important;
+  }
+
+  .ingeniero-card{
+    width: 100% !important;
+    height: auto !important;
+    overflow: hidden;
+
+    >img{
+      width: 110% !important;
+    }
   }
 }

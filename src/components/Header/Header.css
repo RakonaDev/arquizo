@@ -103,6 +103,34 @@
     transform: translateX(-50%);
     left: 60%;
   }
+
+  .header-container{
+    width: 75px !important;
+  }
+
+  .header-content{
+    width: 75px !important;
+  }
+
+  .header-container .header-head{
+    width: 75px !important;
+
+    .icon-img{
+      width: 45px !important;
+    }
+  }
+
+  .header-container .header-content .poylgon-container{
+    width: 75px;
+
+    .polygon-img{
+      width: 30px !important;
+    }
+  }
+
+  .header-container .header-content .nav-container{
+    width: 75px !important;
+  }
 }
 
 @keyframes showHeader {
