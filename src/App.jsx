@@ -3,6 +3,7 @@ import { Header } from './components/Header/Header'
 import { Inicio } from './components/Inicio/Inicio'
 import { Nosotros } from './components/Nosotros/Nosotros'
 import { NosotrosSec } from './components/NosotrosSec/NosotrosSec'
+import { ProyectosHeader } from './components/Proyectos/Proyectos'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Inicio></Inicio>
       <Nosotros></Nosotros>
       <NosotrosSec></NosotrosSec>
+      <ProyectosHeader></ProyectosHeader>
     </>
   )
 }
