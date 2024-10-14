@@ -1,5 +1,6 @@
 export function mostrarProyectos(mostrar, setMostrar, elemento, listaElementos){
-  var elementoSeleccionado 
+  var elementoSeleccionado
+  var elementoMostrado 
   if(mostrar === elemento){
     return
   }
@@ -13,7 +14,19 @@ export function mostrarProyectos(mostrar, setMostrar, elemento, listaElementos){
   if(elemento === "interiores"){
     elementoSeleccionado = listaElementos[2]
   }
+
+  if(mostrar === "tramites"){
+    elementoMostrado = listaElementos[0]
+  }
+  if(mostrar === "arquitectura"){
+    elementoMostrado = listaElementos[1]
+  }
+  if(mostrar === "interiores"){
+    elementoMostrado = listaElementos[2]
+  }
   EliminandoMostrar(listaElementos)
+  elementoMostrado.classList.add("retirado")
+  elementoSeleccionado.classList.remove("retirado")
   elementoSeleccionado.classList.add("mostrar")
 
   console.log("Seleccionaste: " + elemento)
