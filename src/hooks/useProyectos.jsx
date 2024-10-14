@@ -1,9 +1,30 @@
+import { preparandoTitulo } from "./useTitulo"
+
 export function mostrarProyectos(mostrar, setMostrar, elemento, listaElementos){
-  var elementoSeleccionado
-  var elementoMostrado 
   if(mostrar === elemento){
     return
   }
+
+  if(window.innerWidth <= 1068){
+    return
+  }
+  preparandoProyectos(mostrar, elemento, listaElementos)
+  preparandoTitulo(mostrar, elemento, document.querySelectorAll(".titulo-item"))
+
+  console.log("Seleccionaste: " + elemento)
+  console.log("Estamos mostrando: " + mostrar)
+  setMostrar(elemento)
+}
+
+function EliminandoMostrar(listaElementos) {
+  listaElementos.forEach((elemento) => {
+    elemento.classList.remove("mostrar")
+  })
+}
+
+export function preparandoProyectos(mostrar, elemento, listaElementos){
+  var elementoSeleccionado
+  var elementoMostrado 
 
   if(elemento === "tramites"){
     elementoSeleccionado = listaElementos[0]
@@ -28,14 +49,4 @@ export function mostrarProyectos(mostrar, setMostrar, elemento, listaElementos){
   elementoMostrado.classList.add("retirado")
   elementoSeleccionado.classList.remove("retirado")
   elementoSeleccionado.classList.add("mostrar")
-
-  console.log("Seleccionaste: " + elemento)
-  console.log("Estamos mostrando: " + mostrar)
-  setMostrar(elemento)
-}
-
-function EliminandoMostrar(listaElementos) {
-  listaElementos.forEach((elemento) => {
-    elemento.classList.remove("mostrar")
-  })
 }
