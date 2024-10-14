@@ -106,8 +106,8 @@
     position: relative;
     height: auto;
     margin-bottom: 3rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
   }
 
   .vision-container{
@@ -115,8 +115,8 @@
     position: relative;
     height: auto;
     background-color: #092A4D;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
     padding-bottom: 4rem;
 
     &:hover{
@@ -134,8 +134,8 @@
   }
 
   .header-nosotros-sec{
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
   }
 }
 

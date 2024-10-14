@@ -14,7 +14,7 @@ export const Nosotros = () => {
             <img src={Helmet} alt="" className="helmet-img" />
           </div>
           <section className="nosotros-body">
-            <div className="container border-1 border-black ps-5 pe-5 pt-3">
+            <div className="container pt-3">
               <h1 className="pt-4 text-rojo ibrand">NOSOTROS</h1>
               <p className="pt-4 fs-5 text-justify texto-azul fw-medium">
                 ARQUIZO es un estudio arquitectónico peruano con amplia

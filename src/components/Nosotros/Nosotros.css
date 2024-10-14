@@ -34,6 +34,8 @@ overflow: hidden;  width: 100%;
   height: auto;
   background-color: transparent;
   z-index: 10;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .ingeniero-card{
@@ -97,6 +99,8 @@ overflow: hidden;  width: 100%;
     width: 100%;
     height: auto;
     padding-bottom: 120px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .nosotros-container{
@@ -115,10 +119,24 @@ overflow: hidden;  width: 100%;
     width: 100% !important;
   }
 
+  .ingeniero-body{
+    bottom: 0.5rem !important;
+  }
+
   .ingeniero-card{
     width: 100% !important;
     height: auto !important;
     overflow: hidden;
+    >p{
+      font-size: 0.78rem !important;
+      top: 40% !important;
+      right: -200px !important;
+
+    }
+
+    &:hover > p {
+      right: -95px !important;
+    }
 
     >img{
       width: 110% !important;
