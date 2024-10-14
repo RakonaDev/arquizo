@@ -62,8 +62,8 @@
     letter-spacing: 3px;
     transition: all 0.5s;
 
-    &:hover{
-      color: rgba(255, 33, 46, 1);
+    &:hover {
+      color: rgba(255, 33, 46, 0.7);
     }
   }
 }
@@ -92,10 +92,14 @@
     color: white;
     transition: all 0.5s;
 
-    &:hover{
+    &:hover {
       color: #FF212E;
     }
   }
+}
+
+.activo{
+  color: #F9202E !important;
 }
 
 @media (max-width: 768px) {

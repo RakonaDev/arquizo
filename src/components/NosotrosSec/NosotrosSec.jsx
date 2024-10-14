@@ -5,7 +5,7 @@ import BackNosotros from "../../img/NosotrosSec/back-nosotros.png";
 export function NosotrosSec() {
   return (
     <>
-      <div className="d-flex">
+      <div className="d-flex" id="nosotrosSpec">
         <div className="sombraHeader"></div>
         <div className="nosotrosSec-container">
           <div className="header-nosotros-sec">

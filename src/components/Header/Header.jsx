@@ -3,12 +3,19 @@ import { Navigation } from '../../hooks/useNavigation'
 import Marca from '../../img/Header/marca.svg'
 import Polygon from '../../img/Header/polygon.svg'
 import { useEffect } from 'react'
+import { activarXScroll } from '../../hooks/useScroll'
 
 export function Header() {
 
   useEffect(() => {
     const $sombraInicio = document.getElementById("sombraInicio");
     const $inicio = document.getElementById("inicio");
+    const $navItems = document.querySelectorAll(".nav-item");
+
+    window.addEventListener('scroll', () => {
+      activarXScroll($navItems);
+    });
+
 
     $sombraInicio.style.height = $inicio.clientHeight + "px";
   },[])
@@ -25,7 +32,7 @@ export function Header() {
           </div>
           <ul className='nav-container'>
             <li className='ibrand nav-item'><p className='fs-2'>SECTORES</p></li>
-            <li className='ibrand nav-item'><p className='fs-2'>PROYECTOS</p></li>
+            <li className='ibrand nav-item'><p className='fs-2' onClick={() => Navigation('#proyectos')}>PROYECTOS</p></li>
             <li className='ibrand nav-item'><p className='fs-2' onClick={() => Navigation('#nosotros')}>NOSOTROS</p></li>
           </ul>
         </div>
