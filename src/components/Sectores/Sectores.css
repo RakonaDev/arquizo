@@ -41,6 +41,7 @@
 
   .sector-header{
     width: 30%;
+    display: block;
   }
 
   .sector-body{
@@ -52,22 +53,88 @@
   }
 }
 
-.extending-animation{
-  view-timeline-name: --reveal;
-  animation-name: extending;
-  animation-fill-mode: both;
-
-  animation-timeline: --reveal ;
-  animation-range: entry 20% cover 50%;
+.sector-footer{
+  display: none;
 }
 
-.extending-aside-animation{
-  view-timeline-name: --reveal;
-  animation-name: extending-aside;
-  animation-fill-mode: both;
+@media (width > 768px){
+  .extending-animation{
+    view-timeline-name: --reveal;
+    animation-name: extending;
+    animation-fill-mode: both;
+  
+    animation-timeline: --reveal ;
+    animation-range: entry 20% cover 50%;
+  }
 
-  animation-timeline: --reveal;
-  animation-range: entry 20% cover 50%;
+  .img-responsive{
+    display: none;
+  }
+  
+  .extending-aside-animation{
+    view-timeline-name: --reveal;
+    animation-name: extending-aside;
+    animation-fill-mode: both;
+  
+    animation-timeline: --reveal;
+    animation-range: entry 20% cover 50%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .sector-header{
+    display: none !important;
+    width: 0% !important;
+
+    >img{
+      display: none !important;
+    }
+  }
+
+  .sectores-aside{
+    display: none !important;
+  }
+
+  .sector-body{
+    width: 100% !important;
+    padding: 5rem 1rem !important;
+    background-color: rgba(9, 42, 77, 0.65);
+
+    >p{
+      width: 100% !important;
+    }
+    >h1{
+      letter-spacing: 1px !important;
+      text-align: center !important;
+      text-overflow: clip !important;
+    }
+  }
+
+  .img-responsive{
+    display: block;
+    margin: 1.5rem auto;
+  }
+
+  .sectores-main{
+    padding: 0rem;
+    background-color: transparent;
+  }
+
+  .sector-item{
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100% !important;
+  }
+
+  .sector-footer{
+    display: block !important;
+    background-color: transparent !important;
+    padding-bottom: 3rem !important;
+
+    >h1{
+      letter-spacing: 4px !important;
+    }
+  }
 }
 
 @keyframes extending {
@@ -84,8 +151,10 @@
 @keyframes extending-aside {
   from{
     width: 40%;
+    opacity: 0.5;
   }
   to{
     width: 20%;
+    opacity: 1;
   }
 }

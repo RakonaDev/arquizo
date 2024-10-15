@@ -17,10 +17,11 @@ export function Sectores() {
             {/* Sector 1 */}
             <div className="sector-item">
               <article className="sector-header">
-                <img src={Sector1} alt="sector1" className="w-100" />
+                <img src={Sector1} alt="sector1" className="w-100 imagen-pc"/>
               </article>
               <section className="sector-body">
                 <h1 className="fs-1 text-light">SANEAMIENTO FÍSICO LEGAR</h1>
+                <img src={Sector1} alt="sector1" className="w-100 img-responsive"/>
                 <p className="fs-6 text-light text-justify corbel">
                   Realizamos proyectos de saneamiento físico legal desde la
                   etapa preliminar hasta su implementación. En la fase inicial,
@@ -33,6 +34,9 @@ export function Sectores() {
                   nuestros clientes.
                 </p>
               </section>
+              <footer className="text-center w-100 sector-footer">
+                <h1 className="w-100 fw-bold ibrand">SECTORES</h1>
+              </footer>
             </div>
 
             {/* Sector 2 */}
@@ -41,7 +45,8 @@ export function Sectores() {
                 <img src={Sector2} alt="sector1" className="w-100" />
               </article>
               <section className="sector-body">
-                <h1 className="fs-1 text-light">PROYECTOS ARQUITECTONICOS</h1>
+                <h1 className="fs-1 text-light">PROYECTOS ARQUITECTÓNICOS</h1>
+                <img src={Sector2} alt="sector1" className="w-100 img-responsive"/>
                 <p className="fs-6 text-light text-justify corbel">
                   Desarrollamos proyectos arquitectónicos desde la concepción
                   inicial hasta la ejecución final. Nuestro equipo se encarga de
@@ -54,6 +59,9 @@ export function Sectores() {
                   con su entorno y respete la normativa vigente.
                 </p>
               </section>
+              <footer className="text-center w-100 sector-footer">
+                <h1 className="w-100 fw-bold ibrand">SECTORES</h1>
+              </footer>
             </div>
 
             {/* Sector 3 */}
@@ -63,6 +71,7 @@ export function Sectores() {
               </article>
               <section className="sector-body">
                 <h1 className="fs-1 text-light">DISEÑO DE INTERIORES</h1>
+                <img src={Sector3} alt="sector1" className="w-100 img-responsive"/>
                 <p className="fs-6 text-light text-justify corbel">
                   Ofrecemos servicios de diseño de interiores que transforman
                   espacios en entornos funcionales y estéticamente agradables.
@@ -76,6 +85,9 @@ export function Sectores() {
                   ambiente.
                 </p>
               </section>
+              <footer className="text-center w-100 sector-footer">
+                <h1 className="w-100 fw-bold ibrand">SECTORES</h1>
+              </footer>
             </div>
           </main>
         </article>
