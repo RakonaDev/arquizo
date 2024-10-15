@@ -2,11 +2,38 @@
 
 @font-face {
   font-family: 'ibrand';
-  src: url('../public/ibrand.otf') format('truetype');
+  src: url('/ibrand.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Corbel';
+  src: url('/CORBEL.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Corbel-Bold';
+  src: url('../public/Corbel Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Coberli';
+  src: url('/corbelli.ttf') format('truetype');
+}
+
+.corbeli{
+  font-family: 'Coberli' !important;
 }
 
 .ibrand {
   font-family: 'ibrand' !important;
+}
+
+.corbel-bold{
+  font-family: 'Corbel-Bold' !important;
+}
+
+.corbel{
+  font-family: 'Corbel' !important;
 }
 
 .cursor-pointer{

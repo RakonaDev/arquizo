@@ -16,7 +16,7 @@ export const Nosotros = () => {
           <section className="nosotros-body">
             <div className="container pt-3">
               <h1 className="pt-4 text-rojo ibrand">NOSOTROS</h1>
-              <p className="pt-4 fs-5 text-justify texto-azul fw-medium">
+              <p className="pt-4 fs-5 text-justify texto-azul fw-medium corbel-bold">
                 ARQUIZO es un estudio arquitectónico peruano con amplia
                 experiencia en gestión de proyectos y saneamiento físico legal.
                 Ofrecemos soluciones integrales en trámites, diseño

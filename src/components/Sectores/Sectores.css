@@ -1,0 +1,91 @@
+.sectores-container{
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+}
+
+.sectores-aside{
+  position: relative;
+  flex-grow: 1;
+  height: 100%;
+
+  >h1{
+    position: absolute;
+    top: 13rem;
+    right: -12rem;
+    transform: translate(-50%, -50%);
+    letter-spacing: 3px;
+    rotate: 270deg;
+    font-size: 4rem;
+    cursor: default;
+    letter-spacing: 9px;
+  }
+}
+
+.sectores-main{
+  position: relative;
+  height: auto;
+  background-color: rgba(9, 42, 77, 0.65);
+  padding: 2rem 3rem;
+  gap: 1.5rem 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sector-item{
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+
+  .sector-header{
+    width: 30%;
+  }
+
+  .sector-body{
+    width: 70%;
+
+    >h1{
+      width: 35rem;
+    }
+  }
+}
+
+.extending-animation{
+  view-timeline-name: --reveal;
+  animation-name: extending;
+  animation-fill-mode: both;
+
+  animation-timeline: --reveal ;
+  animation-range: entry 20% cover 50%;
+}
+
+.extending-aside-animation{
+  view-timeline-name: --reveal;
+  animation-name: extending-aside;
+  animation-fill-mode: both;
+
+  animation-timeline: --reveal;
+  animation-range: entry 20% cover 50%;
+}
+
+@keyframes extending {
+  from{
+    width: 60%;
+    opacity: 0.5;
+  }
+  to{
+    width: 80%;
+    opacity: 1;
+  }
+}
+
+@keyframes extending-aside {
+  from{
+    width: 40%;
+  }
+  to{
+    width: 20%;
+  }
+}

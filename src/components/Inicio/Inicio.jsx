@@ -46,7 +46,7 @@ export function Inicio() {
         <section className="cuerpo-body-section">
           <section className="container">
             <img className="ingenieros-img" src={Ingenieros} alt="Ingenieros" id="ingenieros" />
-            <p className="fs-5 text-white description inter">
+            <p className="fs-5 text-white description corbel-bold">
               En ARQUIZO, impulsamos el crecimiento profesional, la innovación y
               los logros de nuestros colaboradores para contribuir al progreso
               de la arquitectura peruana.
