@@ -31,7 +31,7 @@ export function Header() {
             <img src={Polygon} alt="polygon" className='polygon-img cursor-pointer'/>
           </div>
           <ul className='nav-container'>
-            <li className='ibrand nav-item'><p className='fs-2'>SECTORES</p></li>
+            <li className='ibrand nav-item'><p className='fs-2' onClick={() => Navigation("#sectores")}>SECTORES</p></li>
             <li className='ibrand nav-item'><p className='fs-2' onClick={() => Navigation('#proyectos')}>PROYECTOS</p></li>
             <li className='ibrand nav-item'><p className='fs-2' onClick={() => Navigation('#nosotros')}>NOSOTROS</p></li>
           </ul>
