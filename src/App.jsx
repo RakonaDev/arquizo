@@ -6,6 +6,7 @@ import { NosotrosSec } from './components/NosotrosSec/NosotrosSec'
 import { ProyectosHeader } from './components/Proyectos/Proyectos'
 import { ProyectosMostrar } from './components/ProyectosMostrar/ProyectosMostrar'
 import { Sectores } from './components/Sectores/Sectores'
+import { Servicios } from './components/Servicios/Servicios'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <ProyectosHeader></ProyectosHeader>
       <ProyectosMostrar></ProyectosMostrar>
       <Sectores></Sectores>
+      <Servicios></Servicios>
     </>
   )
 }

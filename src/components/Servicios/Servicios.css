@@ -1,0 +1,65 @@
+.servicios-main{
+  width: 100%;
+  flex-grow: 1;
+  height: auto;
+  display: flex;
+  
+}
+
+.servicios-aside{
+  position: relative;
+  width: 30%;
+  height: auto;
+
+  >h1{
+    position: absolute;
+    top: 17rem;
+    right: -12rem;
+    transform: translate(-50%, -50%);
+    letter-spacing: 3px;
+    rotate: 270deg;
+    font-size: 4rem;
+    cursor: default;
+    letter-spacing: 9px;
+  }
+}
+
+.servicios-article{
+  width: 70%;
+  height: auto;
+  padding: 4rem 4rem;
+  background-color: rgba(9, 42, 77, 0.65);
+}
+
+.servicios-body{
+  padding-top: 2rem;
+
+  .servicios-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 3rem;
+  }
+}
+
+.tramites-item{
+  position: relative;
+  width: 247px;
+  height: 319px;
+  overflow: hidden;
+
+  .servicios-imagen{
+    top: -2.5rem;
+
+    position: absolute;
+    width: 260%;
+    transform: translateX(-35%);
+  }
+}
+
+.tramites-item{
+
+  .arquitectura-imagen{
+    width: 100%;
+  }
+}
+
