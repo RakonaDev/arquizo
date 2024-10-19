@@ -13,9 +13,9 @@
 
   >h1{
     position: absolute;
-    top: 17rem;
+    top: 48%;
     right: -12rem;
-    transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
     letter-spacing: 3px;
     rotate: 270deg;
     font-size: 4rem;
@@ -41,25 +41,122 @@
   }
 }
 
-.tramites-item{
+
+.servicios-item{
   position: relative;
-  width: 247px;
-  height: 319px;
-  overflow: hidden;
+  width: 300px;
+  height: 390px;
+  padding-top: 0.5rem;
+  padding-left: 0.7rem; 
+  padding-right: 0.7rem;
+
+  .item-content{
+    padding: 0.5rem;
+    padding-top: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+
+    >p{
+      letter-spacing: 4px;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .arquitectura-imagen{
+    position: absolute;
+    top: 0px;
+    left: 0;
+  }
 
   .servicios-imagen{
-    top: -2.5rem;
+    top: 0px;
+    left: 0px;
 
     position: absolute;
-    width: 260%;
-    transform: translateX(-35%);
+    width: 100%;
   }
 }
 
-.tramites-item{
+.servicios-item{
 
   .arquitectura-imagen{
     width: 100%;
   }
 }
 
+@media (width >= 768px){
+  .servicios-footer{
+    display: none;
+  }
+
+  .servicios-responsive{
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px){
+  .servicios-aside{
+    display: none;
+  }
+
+  .servicios-article{
+    width: 100%;
+    padding: 0px !important;
+    background-color: transparent;
+  }
+
+  .servicios-item{
+    width: 100% !important;
+    height: auto;
+  }
+
+  .servicios-header{
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    background-color: rgba(9, 42, 77, 0.65);
+
+    >h1{
+      letter-spacing: 2px;
+    }
+  }
+
+  .servicios-body{
+    background-color: rgba(9, 42, 77, 0.65);
+    padding: 1rem 0.7rem;
+    min-height: 850px;
+
+
+    .servicios-imagen{
+      width: 100%;
+      height: auto !important;
+      position: relative;
+    }
+
+
+    .item-content{
+      width: 90% !important;
+      position: absolute;
+      top: 50px;
+      left: 5%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  .servicios-list{
+    gap: 1rem;
+
+    .servicios-item:nth-child(3){
+      display: none;
+    }
+  }
+}
