@@ -1,0 +1,16 @@
+.contacto-main-content{
+  width: 100%;
+  height: auto;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 6rem;
+}
+
+.form-section{
+  width: 70%;
+}
+
+.person-aside{
+  position: relative;
+  width: 30%;
+}
