@@ -6,6 +6,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
+  scrollbar-color: white #092A4D;
 
   animation: showHeader 0.5s ease-in-out;
 }
@@ -111,7 +112,7 @@
 
 .anterior{
   position: absolute;
-  transform: translateY(100%);
+  transform: translateY(200%);
 }
 
 .centro-container{
@@ -120,7 +121,7 @@
 
 .siguiente{
   position: absolute;
-  transform: translateY(-100%);
+  transform: translateY(-200%);
 }
 
 .activo{

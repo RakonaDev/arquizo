@@ -69,7 +69,7 @@ export function Header() {
                 </p>
               </li>
               <li className="ibrand nav-item">
-                <p className="fs-3" style={{width: "210px"}} onClick={() => Navigation("#nosotros")}>
+                <p className="fs-3" style={{width: "210px"}} onClick={() => Navigation("#contratar")}>
                   TRABAJA CON NOSOTROS
                 </p>
               </li>

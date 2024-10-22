@@ -1,5 +1,6 @@
 import './App.css'
 import { Contacto } from './components/Contacto/Contacto'
+import { Contratar } from './components/Contratar/Contratar'
 import { Header } from './components/Header/Header'
 import { Inicio } from './components/Inicio/Inicio'
 import { Nosotros } from './components/Nosotros/Nosotros'
@@ -22,6 +23,7 @@ function App() {
       <Sectores></Sectores>
       <Servicios></Servicios>
       <Contacto></Contacto>
+      <Contratar></Contratar>
     </>
   )
 }
