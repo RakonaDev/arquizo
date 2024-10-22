@@ -1,16 +1,112 @@
 .contacto-main-content{
   width: 100%;
   height: auto;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  padding-left: 6rem;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .form-section{
-  width: 70%;
+  width: 50%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 6rem;
+  z-index: 10;
+  .titulo-form{
+    font-size: calc(2rem + 1.5vw);
+  }
 }
 
 .person-aside{
   position: relative;
-  width: 30%;
+  width: 50%;
+
+  .persona{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 110%;
+  }
+}
+
+.form-control{
+  background-color: rgba(116, 116, 116, 0.36);
+  border-color: rgba(116, 116, 116, 0.36);
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  z-index: 10 !important;
+}
+
+.form-control:focus{
+  background-color: rgba(116, 116, 116, 0.36);
+}
+
+label{
+  color: #ffff !important;
+}
+
+label::after{
+  background-color: transparent !important;
+}
+
+.contacto-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.short-input{
+  width: 48%;
+}
+
+textarea{
+  height: 300px !important;
+  resize: none;
+}
+
+.btn-enviar-contacto{
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 33, 46, 1);
+  color: white;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  z-index: 10;
+
+  &:hover{
+    background-color: rgba(200, 33, 46, 1);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .short-input{
+    width: 100%;
+  }
+}
+
+@media (width <= 1450px) {
+  .person-aside{
+    display: none;
+  }
+
+  .form-section{
+    width: 80%;
+  }
+}
+
+@media (width <= 968px) {
+  .short-input{
+    width: 100%;
+  }
+  .form-section{
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+
+  .contacto-main{
+    margin-top: 4rem;
+  }
 }

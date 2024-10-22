@@ -1,7 +1,7 @@
 
 .header-container{
   width: 95px;
-  height: 100dvh;
+  height: 110dvh;
   background-color: #092A4D;
   overflow-y: auto;
   overflow-x: hidden;
@@ -24,7 +24,13 @@
 
 .header-container .header-content{
   width: 95px;
-  height: 600px;
+  height: 850px;
+  position: relative;
+  overflow: hidden;
+}
+
+.containerNav{
+  transition: all 0.5s;
 }
 
 .header-container .header-content .poylgon-container{
@@ -43,7 +49,7 @@
 
 .header-container .header-content .nav-container{
   width: 95px;
-  height: 650px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -55,15 +61,19 @@
     width: fit-content;
     height: fit-content;
     color: white;
-    transform: rotate(270deg);
+    rotate: 270deg;
     display: flex;
     justify-content: center;
     align-items: end;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     transition: all 0.5s;
 
     &:hover {
       color: rgba(255, 33, 46, 0.7);
+    }
+
+    >p{
+      transform: translateY(3px);
     }
   }
 }
@@ -96,6 +106,21 @@
       color: #FF212E;
     }
   }
+}
+
+
+.anterior{
+  position: absolute;
+  transform: translateY(100%);
+}
+
+.centro-container{
+  position: absolute;
+}
+
+.siguiente{
+  position: absolute;
+  transform: translateY(-100%);
 }
 
 .activo{
