@@ -16,6 +16,19 @@ export function activarXScroll(elemento) {
     document.getElementById("sectores").scrollHeight +
     proyectosHeight -
     60;
+  const serviciosHeight =
+    document.getElementById("servicios").scrollHeight +
+    sectoresHeight +
+    200;
+  const contactoHeight =
+    document.getElementById("contacto").scrollHeight +
+    serviciosHeight +
+    340;
+  const contratarHeight =
+    document.getElementById("contratar").scrollHeight +
+    contactoHeight -
+    60;
+
   if (window.scrollY < inicioHeight) {
     EliminarActive(elemento);
   } else if (
@@ -46,6 +59,33 @@ export function activarXScroll(elemento) {
     else{
       EliminarActive(elemento)
       elemento[0].classList.add("activo")
+    }
+  }
+  else if(sectoresHeight < window.scrollY && window.scrollY < serviciosHeight){
+    if(elemento[3].classList.contains("activo")){
+      return
+    }
+    else{
+      EliminarActive(elemento)
+      elemento[3].classList.add("activo")
+    }
+  }
+  else if(serviciosHeight < window.scrollY && window.scrollY < contactoHeight){
+    if(elemento[4].classList.contains("activo")){
+      return
+    }
+    else{
+      EliminarActive(elemento)
+      elemento[4].classList.add("activo")
+    }
+  }
+  else if(contactoHeight < window.scrollY && window.scrollY < contratarHeight){
+    if(elemento[5].classList.contains("activo")){
+      return
+    }
+    else{
+      EliminarActive(elemento)
+      elemento[5].classList.add("activo")
     }
   }
 }

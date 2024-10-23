@@ -1,8 +1,13 @@
 import "./Contratar.css";
 
+import { useState } from "react";
+
 import Ingenieros from "../../img/Contratar/ingenieros.png";
 
 export function Contratar() {
+
+  const[nombreArchivo, setNombreArchivo] = useState('Seleccionar Archivo');
+
   return (
     <>
       <div className="contratar-route w-100" id="contratar">
@@ -48,8 +53,20 @@ export function Contratar() {
                     <input type="text" id='empresa' placeholder='' className='form-control' required autoComplete='off'/>
                     <label htmlFor='empresa'>Puesto de interés</label>
                   </div>
-                  <input type="file" name="" id="" />
-                  <input type="checkbox" name="" id="" />
+                  <div className="w-100 d-flex flex-column gap-3 mb-3">
+                    <label htmlFor="archivo" className="text-dark fs-5 ps-3 corbel-bold cursor-pointer">Adjuntar tu CV</label>
+                    <label htmlFor="archivo" className="label-input corbel-bold text-dark cursor-pointer">
+                      <p>{nombreArchivo}</p>
+                    </label>
+                    <input type="file" name="check" id="archivo" accept="application/pdf" hidden required onChange={(event) => setNombreArchivo(event.target.files[0].name)}/>
+                  </div>
+                  <div className="w-100 ps-1 mb-3">
+                    <input type="checkbox" name="check" id="check" required/>
+                    <label htmlFor="check" className="ps-2 text-dark corbel-bold">Acepto los términos y condiciones</label>
+                  </div>
+                  <div className="w-100 d-flex justify-content-end">
+                    <input type="submit" value="Enviar" className='btn-enviar-contacto corbel fs-5'/>
+                  </div>
                 </form>
               </div>
             </section>

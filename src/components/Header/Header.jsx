@@ -11,7 +11,7 @@ export function Header() {
     const $sombraInicio = document.getElementById("sombraInicio");
     const $inicio = document.getElementById("inicio");
     const $navItems = document.querySelectorAll(".nav-item");
-
+    console.log($navItems);
     window.addEventListener("scroll", () => {
       activarXScroll($navItems);
     });

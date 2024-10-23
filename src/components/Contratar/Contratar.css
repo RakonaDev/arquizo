@@ -6,7 +6,6 @@
 .contratar-section{
   width: 70%;
   height: 100%;
-  border: 2px solid black;
   display: flex;
   align-items: center;
 
@@ -31,5 +30,55 @@
 
   >p{
     padding-bottom: 2rem;
+  }
+}
+
+.label-input{
+  
+  width: 270px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  color: black;
+  padding-left: 1rem;
+  border-radius: 20px;
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.3);
+  background-color: rgba(116, 116, 116, 0.36);
+
+  >p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+  }
+}
+
+@media (width <= 1450px) {
+
+  .contratar-contect{
+    padding-top: 4rem;
+  }
+
+  .contratar-section{
+    width: 100%;
+  }
+
+  .contratar-aside{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .contratar-main{
+    height: auto !important;
+  }
+
+  .contratar-section{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .contratar-contect{
+    padding-bottom: 7rem;
   }
 }
