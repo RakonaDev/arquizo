@@ -28,37 +28,37 @@ export function Contratar() {
                   a la innovación, completa el formulario de solicitud y únete a
                   nosotros en ARQUIZO.
                 </p>
-                <form action="" className="contacto-form">
+                <form action="https://www.arquizo.com/PHP/contratar.php" method="POST" className="contacto-form" encType="multipart/form-data">
                   <div className="form-floating mb-3 short-input">
-                    <input type="text" id='nombre' placeholder='' className='form-control' required autoComplete='off'/>
+                    <input type="text" id='nombre' name="nombres" placeholder='' className='form-control' required autoComplete='off'/>
                     <label htmlFor='nombre'>Nombres</label>
                   </div>
                   <div className="form-floating mb-3 short-input">
-                    <input type="text" id='nombre' placeholder='' className='form-control' required autoComplete='off'/>
-                    <label htmlFor='nombre'>Apellidos</label>
+                    <input type="text" id='apellido' name="apellidos" placeholder='' className='form-control' required autoComplete='off'/>
+                    <label htmlFor='apellido'>Apellidos</label>
                   </div>
                   <div className="form-floating mb-3 short-input">
-                    <input type="email" id='email' placeholder='' className='form-control' required autoComplete='off'/>
+                    <input type="email" id='email' name="email" placeholder='' className='form-control' required autoComplete='off'/>
                     <label htmlFor='email'>Email</label>
                   </div>
                   <div className="form-floating mb-3 short-input">
-                    <input type="tel" id='email' placeholder='' className='form-control' required autoComplete='off'/>
-                    <label htmlFor='email'>Celular</label>
+                    <input type="tel" id='celular' name="celular" placeholder='' className='form-control' required autoComplete='off'/>
+                    <label htmlFor='celular'>Celular</label>
                   </div>
                   <div className="form-floating mb-3 w-100">
-                    <input type="text" id='empresa' placeholder='' className='form-control' required autoComplete='off'/>
-                    <label htmlFor='empresa'>Direccióm donde reside</label>
+                    <input type="text" id='direccion' name="direccion" placeholder='' className='form-control' required autoComplete='off'/>
+                    <label htmlFor='direccion'>Direccióm donde reside</label>
                   </div>
                   <div className="form-floating mb-3 w-100">
-                    <input type="text" id='empresa' placeholder='' className='form-control' required autoComplete='off'/>
-                    <label htmlFor='empresa'>Puesto de interés</label>
+                    <input type="text" id='puesto' name="puesto" placeholder='' className='form-control' required autoComplete='off'/>
+                    <label htmlFor='puesto'>Puesto de interés</label>
                   </div>
                   <div className="w-100 d-flex flex-column gap-3 mb-3">
                     <label htmlFor="archivo" className="text-dark fs-5 ps-3 corbel-bold cursor-pointer">Adjuntar tu CV</label>
                     <label htmlFor="archivo" className="label-input corbel-bold text-dark cursor-pointer">
                       <p>{nombreArchivo}</p>
                     </label>
-                    <input type="file" name="check" id="archivo" accept="application/pdf" hidden required onChange={(event) => setNombreArchivo(event.target.files[0].name)}/>
+                    <input type="file" name="my_file" id="archivo" accept="application/pdf" hidden required onChange={(event) => setNombreArchivo(event.target.files[0].name)}/>
                   </div>
                   <div className="w-100 ps-1 mb-3">
                     <input type="checkbox" name="check" id="check" required/>
