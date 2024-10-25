@@ -36,9 +36,6 @@ export function Header() {
       activarXScroll($navItems);
 
       if($navItems[0].classList.contains("activo") || $navItems[1].classList.contains("activo") || $navItems[2].classList.contains("activo")){
-        
-        //console.log(trasladando);
-        console.log(traslado)
 
         if(traslado == ""){
           trasladarHeader("anterior", $containerNav)
@@ -49,12 +46,8 @@ export function Header() {
         else{
           return
         }
-
-        //trasladarHeader("anterior", $containerNav)
       }
       else if($navItems[3].classList.contains("activo") || $navItems[4].classList.contains("activo") || $navItems[5].classList.contains("activo")){
-
-        console.log(traslado)
 
         if(traslado == ""){
           trasladarHeader("siguiente", $containerNav)
@@ -65,7 +58,6 @@ export function Header() {
         else{
           return
         }
-        //trasladarHeader("siguiente", $containerNav)
       }
 
     });
