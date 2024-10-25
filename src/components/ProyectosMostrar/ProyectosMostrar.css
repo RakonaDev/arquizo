@@ -63,11 +63,21 @@
     background-color: #f9202e;
     transition: all 0.3s ease-in-out;
   }
-
+  
   .texto-delineado:hover::after {
     width: 100%;
     height: 4px;
     background-color: #f9202e;
+  }
+  
+
+  .titulo-item.mostrarTitulo{
+    
+    .texto-delineado::after{
+      width: 100%;
+      height: 4px;
+      background-color: #f9202e;
+    }
   }
 
   .proyecto-lista-content {

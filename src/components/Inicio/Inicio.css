@@ -1,11 +1,6 @@
 .body-container {
   flex-grow: 1;
   height: 100dvh;
-  /*
-  background-image: url("../../img/Inicio/body.svg");
-  background-clip: content-box;
-  background-size: cover;
-  background-repeat: no-repeat;*/
   overflow: hidden;
 
   .body-img {
@@ -41,8 +36,17 @@
   font-size: 5.5rem;
   letter-spacing: 5px;
   padding-left: 10.5rem;
+}
 
-  animation: showTitulo 1s ease-in-out;
+.titulo-body{
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 0.7s ease;
+}
+
+.titulo-body.mostrarArriba{
+  opacity: 1;
+  transform: translateY(0%);
 }
 
 .cuerpo-body-section {
@@ -57,7 +61,10 @@
     bottom: 0px;
     right: 0px;
 
-    animation: showScale 0.5s ease;
+    opacity: 0;
+    transition: all 0.7s ease;
+
+    scale: 0;
   }
 
   .description {
@@ -67,14 +74,25 @@
   }
 }
 
+.ingenieros-img.mostrarEscala{
+  opacity: 1;
+  scale: 1;
+}
+
 .logoBody-img {
   position: absolute;
   width: 300px;
   bottom: 15px;
-  transform: translateX(-10%);
+  transform: translateY(100%);
   left: 50%;
+  opacity: 0;
 
-  animation: showLogo 1s ease;
+  transition: all 0.7s ease;
+}
+
+.logoBody-img.mostrarAbajo{
+  opacity: 1;
+  transform: translateY(0%);
 }
 
 @media (max-width: 1170px) {

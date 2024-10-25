@@ -1,6 +1,5 @@
 
-export function Navigation(el, instance = 0, setTrasladando, item) {
+export function Navigation(el, instance = 0) {
   const $el = document.querySelectorAll(el)[instance]
-  setTrasladando(item)
   $el.scrollIntoView({ behavior: 'smooth' })
 }
