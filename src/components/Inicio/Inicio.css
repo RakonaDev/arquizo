@@ -2,6 +2,7 @@
   flex-grow: 1;
   height: 100dvh;
   overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
 
   .body-img {
     min-height: 600px;
@@ -35,19 +36,9 @@
   width: 900px;
   font-size: 5.5rem;
   letter-spacing: 5px;
-  padding-left: 10.5rem;
+  padding-left: 8rem;
 }
 
-.titulo-body{
-  opacity: 0;
-  transform: translateY(-100%);
-  transition: all 0.7s ease;
-}
-
-.titulo-body.mostrarArriba{
-  opacity: 1;
-  transform: translateY(0%);
-}
 
 .cuerpo-body-section {
   position: relative;
@@ -72,6 +63,10 @@
     width: 500px;
     text-align: justify;
   }
+}
+
+.contender-descripcion{
+  padding-left: 8.5rem;
 }
 
 .ingenieros-img.mostrarEscala{
@@ -106,7 +101,7 @@
 
   .titulo-body{
     width: 80% !important;
-    padding-left: 8rem !important;
+    padding-left: 1rem !important;
   }
 }
 
@@ -139,6 +134,11 @@
   .cuerpo-body-section {
     height: auto;
     padding-bottom: 100px;
+  }
+
+  .contender-descripcion{
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
   }
 }
 

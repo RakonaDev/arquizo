@@ -133,16 +133,16 @@ export function Header() {
         </div>
       </header>
       <nav className="fixed-bottom redes-container">
-        <a href="#" className="redes-item">
+        <a href="https://www.facebook.com/profile.php?id=61567372072278" className="redes-item" target="_blank">
           <i className="fab fa-facebook-f fs-4"></i>
         </a>
-        <a href="#" className="redes-item">
+        <a href="https://www.instagram.com/arquizo_studio/?hl=es" className="redes-item" target="_blank">
           <i className="fab fa-instagram fs-4"></i>
         </a>
-        <a href="#" className="redes-item">
+        <a href="https://www.tiktok.com/@studio_arquizo" className="redes-item" target="_blank">
           <i className="fa-brands fa-tiktok fs-4"></i>
         </a>
-        <a href="#" className="redes-item">
+        <a href="#" className="redes-item" target="_blank">
           <i className=" fa-brands fa-youtube fs-4"></i>
         </a>
       </nav>
